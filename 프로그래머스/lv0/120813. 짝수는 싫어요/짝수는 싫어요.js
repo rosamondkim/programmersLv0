@@ -1,8 +1,7 @@
 function solution(n) {
-    let arr = [];
-    for(i=0;i<=n;i++){
-        arr.push(i);
+    let answer = [];
+    for(i=1;i<=n;i+=2){
+         answer.push(i);
     }
-    let answer = arr.filter(x=>x%2!==0);
-    return answer;
+    return answer
 }
